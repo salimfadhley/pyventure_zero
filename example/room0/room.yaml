@@ -1,0 +1,6 @@
+name: The First Room
+description: The first room ever built - it is old, so very old.
+exits:
+ - direction: South
+   destination: room1
+   description: A gleaming passage way

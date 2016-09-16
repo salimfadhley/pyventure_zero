@@ -1,0 +1,6 @@
+name: The second room
+description: A room so shiny and new, it looks like it has just been built
+exits:
+ - direction: North
+   destination: room0
+   description: A rubbish strewen corridor
