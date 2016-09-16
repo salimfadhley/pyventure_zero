@@ -20,8 +20,7 @@ except IOError:
 
 GLOBAL_ENTRY_POINTS = {
     'console_scripts': [
-        'jenkins_invoke=jenkinsapi.command_line.jenkins_invoke:main',
-        'jenkinsapi_version=jenkinsapi.command_line.jenkinsapi_version:main'
+        'start_pyventure=pyventure.pyventure:main',
     ]
 }
 
@@ -36,13 +35,12 @@ setup(
     ],
     zip_safe=True,
     include_package_data=False,
-    install_requires=['requests>=2.3.0', 'pytz>=2014.4'],
+    install_requires=['click'],
     test_suite='nose.collector',
-    tests_require=['mock', 'nose', 'coverage', 'unittest2'],
+    tests_require=['mock', 'nose', 'coverage'],
     entry_points=GLOBAL_ENTRY_POINTS,
     url=PROJECT_URL,
     description=SHORT_DESCRIPTION,
     long_description=DESCRIPTION,
     license='MIT',
-
 )
